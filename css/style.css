@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-main: #0B0F1A;
+}
+
+body{
+    background-color: var(--bg-main);
+    color: white;
+    min-height: 100vh;
+}
+
+section .cards-active{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+    padding: 1rem;
+}
+
+article{
+    background-color: #10172c;
+    padding: 2rem;
+    margin-bottom: 16px;
+    border-radius: 1rem;
+}
