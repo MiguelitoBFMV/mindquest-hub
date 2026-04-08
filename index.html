@@ -17,16 +17,14 @@
         </div>
 
         <h1>DASHBOARD</h1>
-
-        <article>
-            <span>Lvl. 3</span>
-            <span>🧑🏻‍🎓</span>
-            <p>MiguelitoBFMV</p>
-            <progress max="100" value="68"></progress>
-            <p>35 xp to Lvl. 4</p>
-        </article>
-        
-        <div>
+        <div class="head-right">
+            <article class="level-user">
+                <span>Lvl. 3</span>
+                <span>🧑🏻‍🎓</span>
+                <p>MiguelitoBFMV</p>
+                <progress max="100" value="68"></progress>
+                <p>35 xp to Lvl. 4</p>
+            </article>
             <span>🕭Notifications</span>
         </div>
     </header>
@@ -36,7 +34,7 @@
             <h2>MindQuest Hub</h2>
             <h3>Turn Chaos into Progress</h3>
         </div>
-        <nav>
+        <nav class="nav-up">
             <a href="#">Dashboard</a>
             <a href="#">🎮Games</a>
             <a href="#">🕮Manga</a>
@@ -44,19 +42,19 @@
             <a href="#">🎜Audio/Music</a>
             <a href="#">👨‍💻Profile</a>
         </nav>
-        <nav>
+        <nav class="nav-down">
             <a href="#">⚙️Settings</a>
             <a href="#">🛈Support</a>
         </nav>
     </aside>
 
-    <button type="button">+</button>
+    <button class="add-element" type="button">+</button>
 
     <main>
         <section class="recommendation-section">
-            <header>
+            <div>
                 <h2>🧠BRAIN SUGGESTION</h2>
-            </header>
+            </div>
             <div class="recomendation-content">
                 <p>Días de inactividad</p>
                 <h2>Juego/Anime/Manga recomendado</h2>
@@ -68,9 +66,9 @@
         </section>
 
         <section class="currently-active">
-            <header>
+            <div>
                 <h2>⌁CURRENTLY ACTIVE</h2>
-            </header>
+            </div>
 
             <section class="cards-active">
                 <article class="active-game">
@@ -103,7 +101,7 @@
         </section>
 
         <section>
-            <header>
+            <divr>
                 <h2>HUB ANALYTICS</h2>
                 <label for="time-filter">Time Filter</label>
                 <select name="time-filter">
@@ -113,7 +111,7 @@
                     <option value="">Last 6 months</option>
                     <option value="">Last 12 months</option>
                 </select>
-            </header>
+            </divr>
             <div>
                 <div>
                     <progress class="gaming-stats" max="168" value="42"></progress>
@@ -137,7 +135,7 @@
                 </div>
 
                 <div>
-                    <p>Your focus has shifted <span>+12% towards Reading</span> this week compared to last.</p>
+                    <p>Your focus has shifted <strong>+12% towards Reading</strong> this week compared to last.</p>
                 </div>
             </div>           
 

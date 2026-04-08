@@ -64,13 +64,13 @@ El proyecto actualmente contiene:
 ---
 
 ## 🔄 Flujo esperado (arquitectura futura)
-
+```
 Frontend (React)
         ↓
    API (Backend)
         ↓
   Base de Datos
-
+```
 El frontend será responsable de:
 - consumir datos desde la API
 - renderizar la interfaz
@@ -79,7 +79,7 @@ El frontend será responsable de:
 ---
 
 ## 📂 Estructura del proyecto
-
+```
 mindquest-hub/
 │
 ├── index.html
@@ -89,7 +89,7 @@ mindquest-hub/
 │   ├── images/
 │   └── icons/
 └── js/ (futuro)
-
+```
 ---
 
 ## 🧪 Metodología de desarrollo
@@ -124,7 +124,7 @@ El desarrollo se está realizando de forma progresiva:
 
 ## 👤 Autor
 
-Desarrollado por **Miguel Varas**
+Desarrollado por **Miguel Varas Sánchez**
 
 ---
 
