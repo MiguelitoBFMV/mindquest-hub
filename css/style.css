@@ -6,13 +6,15 @@
 
 :root{
     --bg-main: #0B0F1A;
+    --active-transform: scale(1.05);
+    --first-font: "Space Grotesk", sans-serif;
 }
 
 body{
     display: grid;
     background-color: var(--bg-main);
     color: white;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 6fr;
     grid-template-rows: 120px 1fr auto;
     min-height: 100vh;
     grid-template-areas: 
@@ -24,7 +26,7 @@ body{
 body > header {
     display: flex;
     grid-area: header;
-    background: red;
+    background: red; /*valor temporal para visualizar contenedor*/
 
 }
 
@@ -48,17 +50,27 @@ body aside {
     display: flex;
     flex-direction: column;
     grid-area: sidebar;
+    font-size: large;
+    padding-left: 30px;
+    padding-top: 20px;;
+
+    h2, h3 {
+        font-size: medium;
+    }
 }
 
 .nav-up {
     display: flex;
     flex-direction: column;
+    gap: 15px;
+    padding-top: 20px;;
 }
 
 .nav-down{
     margin-top: auto;
     display: flex;
     flex-direction: column;
+    gap: 15px;
 }
 
 body main {
@@ -70,24 +82,64 @@ body footer {
 }
 
 .recommendation-section {
-    margin: 20px;
-    padding: 20px;
+
+    div:first-child {
+        font-family: var(--first-font);
+        font-size: 10px;
+        color: #C6FEF0;
+    }
 }
 
-section .cards-active{
+
+.currently-active h2{
+    font-family: var(--first-font);
+    color: #CB7BFF;
+}
+
+.cards-active{
     display: flex;
     gap: 16px;
     padding: 1rem;
-    width: 300px;
-    height: 350px;
+    justify-content: center;
 
-}
+    article{
+        width: 300px;
+        height: 300px;
+        background-color: #10172c;
+        padding: 2rem;
+        margin-bottom: 16px;
+        border-radius: 1rem;
+        flex: 1;
+        position: relative;
+        overflow: hidden;
+    }
 
-article{
-    background-color: #10172c;
-    padding: 2rem;
-    margin-bottom: 16px;
-    border-radius: 1rem;
+    .active-game {
+        background-image: url("../assets/images/ratchetandclank.avif");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .active-anime {
+        background-image: url("../assets/images/onepiece.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .active-manga {
+        background-image: url("../assets/images/bungostraydogs.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat:no-repeat;
+
+    }
+
+    .active-anime:hover, .active-manga:hover, .active-game:hover{
+        transform: var(--active-transform);
+    }
+
 }
 
 .add-element{
