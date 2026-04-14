@@ -10,12 +10,12 @@
 
 <body>
     <header>
-            <form role="search" name="main-search">
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
-                    <input type="search" placeholder="Busca aquí...">
-                </div>    
-            </form>
+        <form role="search" name="main-search">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
+                <input type="search" placeholder="Busca aquí...">
+            </div>    
+        </form>
 
         <div class="head-right">
             <article class="level-user">
@@ -97,8 +97,110 @@
             </section>
         </section>
 
-        <section>
-            <divr>
+        <section class="audio-hub">
+            <header>
+                <h2>🕪AUDIO HUB</h2>
+
+                <div class="scrobbles-info">
+                    <div>
+                        <h6>SCROBBLES</h6>
+                        <span>12,482</span>
+                    </div>
+
+                    <div>
+                        <h6>HOURS</h6>
+                        <span>412</span>
+                    </div>
+
+                    <div>
+                        <h6>GLOBAL RANK</h6>
+                        <span>#42</span>
+                    </div>
+                </div>
+
+
+                <div class="button-filter-date">
+                    <button type="button">7D</button>
+                    <button type="button">1M</button>
+                    <button type="button">6M</button>
+                    <button type="button">1Y</button>
+                </div>
+
+                <span>🔴LAST.FM LIVE</span>
+            </header>
+
+            <section class="best-artist-song">
+                <article class="artist-best-of">
+                    <span>👨‍🎤</span>
+                    <h3>ARTIST OF THE WEEK</h3>
+                    <span>Bullet for My Valentine</span>
+                </article>
+
+                <article class="song-best-of">
+                    <h3>SONG OF THE WEEK</h3>
+                    <span>Spit You Out</span><br>
+                    <span>Bullet for My Valentine</span>
+                </article>
+            </section>
+            
+
+            <section class="songs-log">
+                <h3>TOP TRACKS</h3>
+                <ol>
+                    <li>Spit You Out - Bullet for My Valentine</li>
+                    <li>A Skyline's Severance - Trivium</li>
+                    <li>Light me Up - Attila</li>
+                    <li>The Voices - Glamour of the Kill</li>
+                    <li>Ni Fu Ni Fa - Ska-P</li>
+                </ol>
+            </section>
+
+
+            <section class="artist-log">
+                <h3>TOP ARTISTS</h3>
+                <ol>
+                    <li>Bullet for My Valentine</li>
+                    <li>Trivium</li>
+                    <li>Attila</li>
+                    <li>Glamour of the Kill</li>
+                    <li>Ska-P</li>
+                </ol>
+            </section>
+
+            <section class="podcast-log">
+                <header>
+                    <span>RECENT PODCAST LOGS</span>
+                </header>
+                <div class="podcast-content">
+                    <div>
+                        <span>🎵</span>
+                        <span>12 Amazing facts about Japan!</span>
+                        <p>Abroad in Japan - 51 min left</p>
+                        <button>▶️</button>
+                    </div>
+
+                    <div>
+                        <span>🎵</span>
+                        <span>Myths about Japan</span>
+                        <p>Abroad in Japan - 52 min left</p>
+                        <button>✅</button>
+                    </div>
+
+                    <div>
+                        <span>🎵</span>
+                        <span>Life as a vlogger (and radio DJ)</span>
+                        <p>Abroad in Japan - 51 min left</p>
+                        <button>▶️</button>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <button>OPEN AUDIO COMMAND CENTER</button>
+            </footer>
+        </section>
+
+        <section class="hub-analytics">
+            <div>
                 <h2>HUB ANALYTICS</h2>
                 <label for="time-filter">Time Filter</label>
                 <select name="time-filter">
@@ -108,7 +210,7 @@
                     <option value="">Last 6 months</option>
                     <option value="">Last 12 months</option>
                 </select>
-            </divr>
+            </div>
             <div>
                 <div>
                     <progress class="gaming-stats" max="168" value="42"></progress>
@@ -138,7 +240,7 @@
 
         </section>
     
-        <section>
+        <section class="recent-activity">
             <header>
                 <h2>RECENT ACTIVITY</h2>
                 <a href="#">VIEW LOG</a>
@@ -161,67 +263,6 @@
                 <p>Watched Ep.12: "In Rikka's Front Row"</p>
                 <p>Mayonaka Heart Tune - 2 days ago</p>
             </article>
-        </section>
-    
-        <section>
-            <header>
-                <h2>🕪AUDIO HUB</h2>
-                <span>🔴LAST.FM LIVE</span>
-            </header>
-            <div>
-                <div>
-                    <h6>SCROBBLES</h6>
-                    <span>12,482</span>
-                </div>
-
-                <div>
-                    <h6>HOURS</h6>
-                    <span>412</span>
-                </div>
-
-                <div>
-                    <h6>GLOBAL RANK</h6>
-                    <span>#42</span>
-                </div>
-            </div>
-
-
-            <article>
-                <span>👨‍🎤</span>
-                <h3>ARTIST OF THE WEEK</h3>
-                <span>Bullet for My Valentine</span>
-                <p>248 Scrobbles - Heavy Rotation</p>
-            </article>
-
-            <section>
-                <header>
-                    <span>RECENT PODCAST LOGS</span>
-                </header>
-
-                <div>
-                    <span>🎵</span>
-                    <span>12 Amazing facts about Japan!</span>
-                    <p>Abroad in Japan - 51 min left</p>
-                    <button>▶️</button>
-                </div>
-
-                <div>
-                    <span>🎵</span>
-                    <span>Myths about Japan</span>
-                    <p>Abroad in Japan - 52 min left</p>
-                    <button>✅</button>
-                </div>
-
-                <div>
-                    <span>🎵</span>
-                    <span>Life as a vlogger (and radio DJ)</span>
-                    <p>Abroad in Japan - 51 min left</p>
-                    <button>▶️</button>
-                </div>
-            </section>
-            <footer>
-                <button>OPEN AUDIO COMMAND CENTER</button>
-            </footer>
         </section>
     </main>
     

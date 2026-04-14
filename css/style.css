@@ -85,18 +85,26 @@ body aside {
 /* MAIN */
 
 body main {
+    display: grid;
     grid-area: content;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "suggestion suggestion"
+    "active active"
+    "analitycs audio"
+    "recent audio";
 }
 
 /* Section Suggestion */
 
 .recommendation-section {
+    grid-column: 1 / -1;
     display: flex;
     flex-direction: column;
     height: 400px;
     overflow: hidden;
-
     padding: 20px;
+
     div:first-child {
         display: flex;
         right: 0;
@@ -105,6 +113,9 @@ body main {
         color: #C6FEF0;
     }
 
+    & > * {
+        margin-top: auto;
+    }
     
 }
 
@@ -120,6 +131,10 @@ body main {
 }
 
 /* Section Currently Active */
+
+.currently-active{
+    grid-column: 1 / -1;
+}
 
 .currently-active h2{
     font-family: var(--first-font);
@@ -185,8 +200,82 @@ body main {
         background: rgba(0, 0, 0, 0.25);
     }
 
+    article .percent-number{
+        left: 0;
+    }
+
 }
 
+/* Section Audio Hub */
+
+.audio-hub {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto 1fr;
+    background-color: #1a1c22;
+    padding: 1.5rem;
+
+
+    & > header{
+        grid-column: 1/-1;
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+    }
+
+    .button-filter-date{
+        margin-left: auto;
+    }
+
+    .scrobbles-info{
+        margin-left: auto;
+        display: flex;
+        gap: 10px;
+    }
+
+    .best-artist-song{
+        gap: 1rem;
+    }
+
+
+    .songs-log, .artist-log, .best-artist-song{
+        padding: 1rem 0 1rem 0;
+    }
+
+
+    .podcast-log{
+        grid-row: 3 / 4;
+        grid-column: 1 / -1;
+
+
+    }
+
+    .podcast-content{
+        display: flex;
+        gap: 10px;
+    }
+
+
+    & > footer {
+        grid-row: 4 / 5;
+        grid-column: 1 / -1;
+        padding: 1.5rem;
+
+        & button {
+            width: 100%;
+        }
+    }
+
+}
+
+
+
+/* Section Hub Analytics */
+
+
+/* BUTTON ADD */
 .add-element{
     background-color: #7293FF;
     width: 50px;
@@ -199,6 +288,6 @@ body main {
     border-radius: 20%;
 }
 
-body footer {
+body > footer {
     grid-area: footer;
 }
