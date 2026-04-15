@@ -130,14 +130,12 @@
             </header>
 
             <section class="best-artist-song">
+                <h3>ARTIST OF THE WEEK</h3>
                 <article class="artist-best-of">
-                    <span>👨‍🎤</span>
-                    <h3>ARTIST OF THE WEEK</h3>
                     <span>Bullet for My Valentine</span>
                 </article>
-
+                <h3>SONG OF THE WEEK</h3>
                 <article class="song-best-of">
-                    <h3>SONG OF THE WEEK</h3>
                     <span>Spit You Out</span><br>
                     <span>Bullet for My Valentine</span>
                 </article>
@@ -199,70 +197,89 @@
             </footer>
         </section>
 
-        <section class="hub-analytics">
-            <div>
-                <h2>HUB ANALYTICS</h2>
-                <label for="time-filter">Time Filter</label>
-                <select name="time-filter">
-                    <option value="">Last 7 days</option>
-                    <option value="">Last 30 days</option>
-                    <option value="">Last 3 months</option>
-                    <option value="">Last 6 months</option>
-                    <option value="">Last 12 months</option>
-                </select>
-            </div>
-            <div>
-                <div>
-                    <progress class="gaming-stats" max="168" value="42"></progress>
-                    <progress class="anime-stats" max="168" value="28"></progress>
-                    <progress class="manga-stats" max="168" value="12"></progress>
+        <section class="backlog-attention">
+            <header>
+                <h2>BACKLOG ATTENTION</h2>      
+                <button type="button" class="button-update"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-refresh"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M20 11a8.1 8.1 0 0 0 -15.5 -2m-.5 -4v4h4" /><path d="M4 13a8.1 8.1 0 0 0 15.5 2m.5 4v-4h-4" /></svg></button>
+            </header>
+
+            <section class="anime-attention">
+                <span>ANIME</span>
+                <div class="anime-element">
+                    <img src="./assets/images/mayonakabacklog.webp" width="30px">
+                    <p>Mayonaka Heart Tune</p>
+                    <p>3 months inactive</p>
                 </div>
 
-                <div>
-                    <div>
-                        <p>Gaming</p>
-                        <p>42h / week</p>
-                    </div>
-                    <div>
-                        <p>Anime</p>
-                        <p>28h / week</p>
-                    </div>
-                    <div>
-                        <p>Manga</p>
-                        <p>12h / week</p>
-                    </div>
+                <div class="anime-element">
+                    <img src="./assets/images/enennoshouboutai.jpg" width="30px">
+                    <p>Enen no Shouboutai</p>
+                    <p>Not watch yet</p>
+                </div>
+            </section>
+
+            <section class="manga-attention">
+                <span>MANGA</span>
+                <div class="manga-element">
+                    <img src="./assets/images/kanojookarishimasu.webp" width="30px">
+                    <p>Kanojo Okarishimasu</p>
+                    <p>2 months inactive</p>
                 </div>
 
-                <div>
-                    <p>Your focus has shifted <strong>+12% towards Reading</strong> this week compared to last.</p>
+                <div class="manga-element">
+                    <img src="./assets/images/kakkounoiinazuke.jpg" width="30px">
+                    <p>Kakkou no Iinazuke</p>
+                    <p>2 months inactive</p>
                 </div>
-            </div>           
+            </section>
+            
+            <section class="games-attention">
+                <span>GAMES</span>
+                <div class="games-element">
+                    <img src="./assets/images/yakuzakiwami.jpeg" width="30px">
+                    <p>Yakuza Kiwami</p>
+                    <p>1 month inactive</p>
+                </div>
+
+                <div class="games-element">
+                    <img src="./assets/images/stellarblade.avif" width="30px">
+                    <p>Stellar Blade</p>
+                    <p>1 year inactive</p>
+                </div>
+            </section>
 
         </section>
     
         <section class="recent-activity">
             <header>
                 <h2>RECENT ACTIVITY</h2>
-                <a href="#">VIEW LOG</a>
+                <p>Your Lastest Milestones</p>
             </header>
 
             <article>
                 <span>🎖️</span>
                 <p>Trophy Earned: "Perfectionist"</p>
-                <p>Yakuza 0 Director's Cut - 2 hours ago</p>
+                <p>Yakuza 0 Director's Cut</p>
+                <span>2 hours ago</span>
             </article>
 
             <article>
                 <span>📖</span>
                 <p>Finished Chapter 32</p>
-                <p>Shangri-la Frontier - Yesterday</p>
+                <p>Shangri-la Frontier</p>
+                <span>Yesterday</span>
             </article>
 
             <article>
                 <span>👁️</span>
                 <p>Watched Ep.12: "In Rikka's Front Row"</p>
-                <p>Mayonaka Heart Tune - 2 days ago</p>
+                <p>Mayonaka Heart Tune</p>
+                <span>2 days ago</span>
             </article>
+
+            <footer>
+                <a href="#">VIEW LOG</a>
+            </footer>
         </section>
     </main>
     

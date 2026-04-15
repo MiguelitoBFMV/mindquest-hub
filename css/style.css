@@ -8,6 +8,7 @@
     --bg-main: #0B0F1A;
     --active-transform: scale(1.05);
     --first-font: "Space Grotesk", sans-serif;
+    --background-main: #1a1c22;
 }
 
 body{
@@ -16,11 +17,11 @@ body{
     color: white;
     grid-template-columns: 1fr 6fr;
     grid-template-rows: 120px 1fr auto;
-    min-height: 100vh;
+    min-height: 0;
     grid-template-areas: 
     "sidebar header"
     "sidebar content"
-    "siderbar footer";
+    "sidebar footer";
 }
 
 /*HEADER*/
@@ -121,12 +122,12 @@ body main {
 
 .recommendation-content{
     flex: 1;
-    
+    overflow: hidden;
     background-image: url("../assets/images/mayonakahearttune.webp");
     background-size: cover;
     background-position: center 30%;
     background-repeat: no-repeat;
-    
+    padding: 1rem;
     border-radius: 1rem;
 }
 
@@ -213,9 +214,10 @@ body main {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: auto 1fr;
-    background-color: #1a1c22;
+    background-color: var(--background-main);
     padding: 1.5rem;
-
+    border-radius: 2rem;
+    margin-right: 1rem;
 
     & > header{
         grid-column: 1/-1;
@@ -232,13 +234,23 @@ body main {
     .scrobbles-info{
         margin-left: auto;
         display: flex;
-        gap: 10px;
+        gap: 50px;
     }
 
     .best-artist-song{
+        display: flex;
+        flex-direction: column;
         gap: 1rem;
     }
 
+    .artist-best-of{
+        background-image: url("../assets/images/bfmv.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 150px;
+        width: 70%;
+    }
 
     .songs-log, .artist-log, .best-artist-song{
         padding: 1rem 0 1rem 0;
@@ -257,7 +269,6 @@ body main {
         gap: 10px;
     }
 
-
     & > footer {
         grid-row: 4 / 5;
         grid-column: 1 / -1;
@@ -270,9 +281,65 @@ body main {
 
 }
 
+.backlog-attention, .recent-activity {
+    background-color: var(--background-main);
+    border-radius: 2rem;
+    margin: 1rem 1rem 1rem 0;
+    padding: 1.5rem;
+}
 
+/* Section Backlog Attention */
 
-/* Section Hub Analytics */
+.backlog-attention{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+
+    & > header{
+        grid-column: 1 / -1;
+        display: flex;
+        margin-bottom: 1rem;
+    }
+
+    .button-update {
+        margin-left: auto;
+    }
+
+    .games-attention {
+        grid-column: 1 / -1;
+    }
+
+    .manga-attention, .games-attention, .anime-attention {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .anime-element{
+        margin-right: 15px;
+    }
+
+}
+
+.manga-element, .anime-element, .games-element{
+    background-color: #0B0F1A;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    align-items: center;
+}
+
+/* Section Recent Activity*/
+
+.recent-activity{
+    display:flex;
+    flex-direction: column;
+    min-height: 0;
+
+    & article {
+        flex: 1;
+    }
+}
+
 
 
 /* BUTTON ADD */
